@@ -298,10 +298,9 @@ body {
   justify-content: left;
   flex-direction: column;
   height: 100vh;
+  row-gap: 2rem;
   padding-top: 20rem;
   padding-bottom: 20rem;
-  font-style: normal;
- 
   
 }
 
@@ -362,6 +361,7 @@ footer {
   height: 26vh;
   margin: 4rem 1rem;
   align-content:end;
+  padding-top: 20rem;
 }
 
 footer p {
@@ -384,6 +384,7 @@ footer p {
   flex-direction: column; /* Ensures content stacks vertically */
   text-align: center; /* Center-aligns text content */
   line-height: 58px;
+  padding-top: 20rem;
   padding-bottom: 20rem;
 
 }
@@ -401,7 +402,7 @@ footer p {
 #work {
   position:relative;
   text-align: center;
-
+  padding: 4rem 0;
 }
 
 .work-title {
@@ -410,29 +411,6 @@ footer p {
   margin-bottom: 3rem;
 }
 
-.work-container {
-  display: flex;
-  justify-content: center;
-  
-  flex-wrap: wrap;
-
-}
-
-.work-box {
-  height:fit-content;
-  background-color: #333;
-  transition: transform 0.3s ease;
-  width: 18rem;
-  height:34rem; /* Increased height */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-}
-
-.work-box:hover {
-  transform: scale(1.05);
-}
 /* Work Section Styles */
 .work-container {
   display: flex;
@@ -467,10 +445,16 @@ footer p {
   transform: translateX(-50%); /* Center the text */
   color: white; /* Text color */
   background: rgba(0, 0, 0, 0.7); /* Darker background for better visibility */
-  /* Padding for the text */
+  padding: 5px 10px; /* Padding for the text */
   border-radius: 5px; /* Optional: rounded corners for text */
   margin: 0; /* Remove default margin */
 }
+
+
+.work-box:hover {
+  transform: scale(1.05);
+}
+
 
 /* EXPERIENCE SECTION */
 
