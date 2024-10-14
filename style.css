@@ -186,7 +186,7 @@ section {
   height: 80vh;
   padding: 0 2rem;                  /* Optional padding for better alignment */
   flex-direction: row-reverse;     /* Reverses the order of elements */
-
+  padding-bottom: 20rem;
 }
 
 .section__pic-container {
