@@ -186,7 +186,7 @@ section {
   height: 80vh;
   padding: 0 2rem;                  /* Optional padding for better alignment */
   flex-direction: row-reverse;     /* Reverses the order of elements */
-  padding-bottom: 20rem;
+
 }
 
 .section__pic-container {
@@ -298,9 +298,10 @@ body {
   justify-content: left;
   flex-direction: column;
   height: 100vh;
-  row-gap: 2rem;
   padding-top: 20rem;
   padding-bottom: 20rem;
+  font-style: normal;
+ 
   
 }
 
@@ -361,7 +362,6 @@ footer {
   height: 26vh;
   margin: 4rem 1rem;
   align-content:end;
-  padding-top: 20rem;
 }
 
 footer p {
@@ -384,7 +384,6 @@ footer p {
   flex-direction: column; /* Ensures content stacks vertically */
   text-align: center; /* Center-aligns text content */
   line-height: 58px;
-  padding-top: 20rem;
   padding-bottom: 20rem;
 
 }
@@ -402,7 +401,7 @@ footer p {
 #work {
   position:relative;
   text-align: center;
-  padding: 4rem 0;
+
 }
 
 .work-title {
@@ -411,7 +410,13 @@ footer p {
   margin-bottom: 3rem;
 }
 
+.work-container {
+  display: flex;
+  justify-content: center;
+  
+  flex-wrap: wrap;
 
+}
 
 .work-box {
   height:fit-content;
@@ -432,7 +437,7 @@ footer p {
 .work-container {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Adjust spacing between boxes as needed */
+  gap: 60px; /* Adjust spacing between boxes as needed */
 }
 
 .work-box {
@@ -462,7 +467,7 @@ footer p {
   transform: translateX(-50%); /* Center the text */
   color: white; /* Text color */
   background: rgba(0, 0, 0, 0.7); /* Darker background for better visibility */
-  padding: 5px 10px; /* Padding for the text */
+  /* Padding for the text */
   border-radius: 5px; /* Optional: rounded corners for text */
   margin: 0; /* Remove default margin */
 }
