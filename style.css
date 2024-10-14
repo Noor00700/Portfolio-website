@@ -411,13 +411,7 @@ footer p {
   margin-bottom: 3rem;
 }
 
-.work-container {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
 
-}
 
 .work-box {
   height:fit-content;
@@ -434,23 +428,45 @@ footer p {
 .work-box:hover {
   transform: scale(1.05);
 }
-
-.img-container {
-  height:fit-content; /* Ensures image container fills the box */
- 
+/* Work Section Styles */
+.work-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust spacing between boxes as needed */
 }
 
-.work-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire box */
-  border-radius: 1rem;
+.work-box {
+  position: relative;
+  width: 300px; /* Set a fixed width for the boxes */
+  height: 400px; /* Set a fixed height for the boxes */
+  overflow: hidden; /* Hide overflow to prevent image spill */
+  border-radius: 8px; /* Add border radius if needed */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for depth */
+  background-color: white; /* Set background to white or desired color */
+}
+
+.work-box img {
+  position: absolute; /* Position the image absolutely */
+  top: 50%; /* Center the image vertically */
+  left: 50%; /* Center the image horizontally */
+  width: 100%; /* Make the image take full width */
+  height: 100%; /* Make the image take full height */
+  object-fit: cover; /* Ensure the image covers the box */
+  transform: translate(-50%, -50%); /* Adjust position to center */
 }
 
 .work-box h3 {
-  color: white;
-  margin-top: 1rem;
+  position: absolute;
+  bottom: 10px; /* Adjust to position the text closer to the bottom */
+  left: 50%; /* Center the text */
+  transform: translateX(-50%); /* Center the text */
+  color: white; /* Text color */
+  background: rgba(0, 0, 0, 0.7); /* Darker background for better visibility */
+  padding: 5px 10px; /* Padding for the text */
+  border-radius: 5px; /* Optional: rounded corners for text */
+  margin: 0; /* Remove default margin */
 }
+
 /* EXPERIENCE SECTION */
 
 #experience {
