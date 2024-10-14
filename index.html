@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img src="Images and media/logo.png" alt="Noor logo">
+        </div>        
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Work">Work</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <nav id="hamburger-nav">
+        <!-- Logo Section -->
+        <div class="logo">
+          <img src="Images and media/logo.png" alt="Noor logo">
+        </div>
+      
+        <!-- Hamburger Menu Section -->
+        <div class="hamburger-menu">
+          <!-- Hamburger Icon -->
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      
+            <!-- Menu Links -->
+             <ul class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/pfp.jpeg" alt="Noor"/>
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello,</p>
+          <h1 class="title">I’m Noor Fatima, a UI/UX designer based in Pakistan. Available for freelance & collaborations.</h1>
+          <div class="btn-container">
+          <div>
+            <div class="btn-container"> <!-- Added the btn-container class -->
+  <button class="btn btn-color-1" onclick="window.location.href='./Assets/resume.pdf'">
+    Download CV
+  </button>
+  <button class="btn btn-color-1" onclick="window.location.href='#contact'">
+    Contact Info
+  </button>
+</div>
+
+<!-- Social Icons -->
+<div id="socials-container">
+  <!-- LinkedIn Icon -->
+  <a
+    href="https://www.linkedin.com/in/noor-fatima-52a8051b1/"
+    target="_blank"
+  >
+    <svg
+      class="icon"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      width="24px"
+      height="24px"
+    >
+      <path
+        fill="white"
+        d="M19.5 0h-15C2.016 0 0 2.016 0 4.5v15c0 2.484 2.016 4.5 4.5 4.5h15c2.484 0 4.5-2.016 4.5-4.5v-15C24 2.016 21.984 0 19.5 0zM7.5 20.25H4.125V9H7.5v11.25zm-1.688-12.25a1.953 1.953 0 1 1 0-3.906 1.953 1.953 0 0 1 0 3.906zm13.188 12.25h-3.375v-5.859c0-1.398-.027-3.196-1.951-3.196-1.977 0-2.278 1.542-2.278 3.139v6.816h-3.375V9h3.227v1.469h.045c.449-.848 1.547-1.738 3.204-1.738 3.424 0 4.062 2.249 4.062 5.168v6.25h.001z"
+      />
+    </svg>
+  </a>
+  <!-- GitHub Icon -->
+  <a href="https://github.com/Noor00700" target="_blank">
+    <svg
+      class="icon"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      width="24px"
+      height="24px"
+    >
+      <path
+        fill="white"
+        d="M12 .297c-6.627 0-12 5.373-12 12 0 5.304 3.438 9.801 8.207 11.387.6.111.793-.261.793-.577 0-.285-.010-1.237-.017-2.244-3.338.724-4.043-1.606-4.043-1.606-.546-1.384-1.333-1.753-1.333-1.753-1.089-.743.083-.729.083-.729 1.204.084 1.835 1.236 1.835 1.236 1.067 1.832 2.8 1.302 3.48.996.108-.773.417-1.302.762-1.602-2.665-.303-5.467-1.335-5.467-5.934 0-1.311.467-2.382 1.236-3.22-.124-.303-.536-1.53.117-3.185 0 0 1.008-.322 3.303 1.23A11.484 11.484 0 0 1 12 4.56c1.021.005 2.048.138 3.003.4 2.292-1.553 3.3-1.23 3.3-1.23.656 1.655.243 2.882.12 3.185.77.838 1.236 1.909 1.236 3.22 0 4.607-2.807 5.628-5.476 5.926.428.373.813 1.102.813 2.222 0 1.606-.014 2.897-.014 3.284 0 .319.188.694.798.577A12.002 12.002 0 0 0 24 12c0-6.627-5.373-12-12-12z"
+      />
+    </svg>
+  </a>
+</div>
+</section>
+<section id="about">
+  <h1 class="title">About Me</h1>
+  <div class="text-container">
+    <p>
+      Welcome to my portfolio! I’m a dedicated UI/UX designer with a passion for crafting intuitive and engaging digital experiences.
+
+      With a background in designing from scratch and a commitment to accessibility and experience of 2+ years working in industry , I leverage creativity and user-centered design principles to create solutions that are both functional and visually captivating.
+
+     My experience spans mobile and web apps, where I collaborate with cross-functional teams to deliver seamless and impactful designs.
+
+     Explore my work to see how I turn ideas into designs that delight users and drive success.
+     </p>
+  </div>
+</section>
+<section id="work">
+  <h1 class="title">Work</h1>
+  <div class="work-container">
+    <!-- Case Study -->
+    <a href="./Assets/oracle bank (1).pdf" target="_blank">
+      <div class="work-box">
+        <img src="./Assets/case study.png" alt="Case Study Cover">
+        <h3>Case Study</h3>
+      </div>
+    </a>
+    
+    <!-- Project 1 -->
+    <a href="./Assets/Talenthunt.pdf" target="_blank">
+      <div class="work-box">
+        <img src="./Assets/project1.png" alt="Project 1 Cover">
+        <h3>Project 1</h3>
+      </div>
+    </a>
+    
+    <!-- Project 2 -->
+    <a href="./Assets/Flask.pdf" target="_blank">
+      <div class="work-box">
+        <img src="./Assets/project2.png" alt="Project 2 Cover">
+        <h3>Project 2</h3>
+      </div>
+    </a>
+  </div>
+</section>
+<section id="experience">
+  <h1 class="title">Experience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Figma</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Sketch</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Adobe XD</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Material UI</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>HTML</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>CSS</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>JavaScript</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Git</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Let’s bring your vision to life! Whether you’re launching a new app or enhancing an existing one, With a keen eye for detail and a passion for innovation, I’m ready to collaborate and turn your ideas into exceptional digital experiences!</h1>
+  <div class="contact-info-upper-container">
+    <img
+        src="./assets/email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:noorfatimahh070@gmail.com">noorfatimahh070@gmail.com</a></p>
+    </div>
+    <div class="contact-info-lower-container">
+      <img
+        src="./Assets/linkedin (1).png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://www.linkedin.com/in/noor-fatima-52a8051b1/"></a>LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Copyright &#169; 2024 Noor Satti. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
