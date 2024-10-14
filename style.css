@@ -182,7 +182,7 @@ section {
   display: flex;
   justify-content: space-between;   /* Space between text and image */
   align-items: center;              /* Vertically center content */
-  gap: 20rem;                        /* Space between text and image */
+  gap: 10rem;                        /* Space between text and image */
   height: 80vh;
   padding: 0 2rem;                  /* Optional padding for better alignment */
   flex-direction: row-reverse;     /* Reverses the order of elements */
